@@ -28,7 +28,7 @@
 
         <!-- SPECIFIC CSS -->
         @yield('css')
-        <link href="{{ asset('fron/css/tabs.css') }}" rel="stylesheet">
+
 
         <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
@@ -57,7 +57,7 @@
             <nav id="top-nav">
                 <ul>
                     <li><a href="#search"><i class=" icon-search"></i></a></li>
-                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="{{ route('tour') }}">Tour</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
                 </ul>
             </nav>
@@ -70,6 +70,7 @@
 
         <div class="main-wrapper">
             @yield('content')
+
             <div class="container_gray_bg" id="newsletter_container">
                 <div class="container margin_60">
                     <div class="row">
@@ -148,8 +149,9 @@
                 <div class="modal-content modal-popup">
                     <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
                     <form action="#" class="popup-form" id="myLogin">
-                        <input type="text" class="form-control form-white" placeholder="Username">
-                        <input type="text" class="form-control form-white" placeholder="Password">
+                        @csrf
+                        <input type="text" class="form-control form-white" placeholder="Username Or Email" name="email">
+                        <input type="text" class="form-control form-white" placeholder="Password" name="password">
                         <div class="checkbox-holder text-left">
                             <div class="checkbox">
                                 <input type="checkbox" value="accept_1" id="check_1" name="check_1" />
@@ -157,7 +159,8 @@
                                             Conditions</strong></span></label>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-submit">Submit</button>
+                        <button type="submit" class="btn btn-submit">Submit <div class="spinner-border text-dark"
+                                id="spin"></div></button>
                     </form>
                 </div>
             </div>
@@ -210,6 +213,57 @@
         <script src="{{ asset('fron/js/tabs.js') }}"></script>
         <script>
             new CBPFWTabs( document.getElementById( 'tabs' ) );
+        </script>
+        <link rel="stylesheet" href="alert/dist/sweetalert2.min.css" type="text/css" media="all" />
+        <script src="alert/dist/sweetalert2.all.min.js"></script>
+        <script>
+            $("#spin").hide();
+        			$("#myLogin").submit(function (e) { 
+        				e.preventDefault();
+        				$("#spin").show();
+        				const form =$("#myLogin").serialize();
+        				$.ajax({
+        					type: "post",
+        					url: "{{ route('login.auth') }}",
+        					data: form,
+        					dataType: "JSON",
+        					success: function (res) {
+        						  if (res.success) {
+        						$("#spin").hide();
+                                    Swal.fire({
+                                        type: 'success',
+                                        title: 'Login Berhasil!',
+                                        text: 'Anda akan di arahkan dalam 3 Detik',
+                                        timer: 3000,
+                                        showCancelButton: false,
+                                        showConfirmButton: false
+                                    })
+                                        .then (function() {
+                                            window.location.href = "{{ route('dashboard') }}";
+                                        });
+        
+                                } else {
+        
+                                    console.log(res.success);
+        
+                                    Swal.fire({
+                                        type: 'error',
+                                        title:res.message,
+                                        text: 'silahkan coba lagi!'
+                                    });
+        							$("#spin").hide();
+                                }
+        						
+        					},error:function(res){
+        						Swal.fire({
+        						type: 'error',
+        						title: 'Opps!',
+        						text: res.statusText
+        						});
+        						$("#spin").hide();
+        					}
+        				});
+        			});
         </script>
     </body>
 

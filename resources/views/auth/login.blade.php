@@ -17,8 +17,8 @@ Author URL: http://w3layouts.com
 		<!--/Style-CSS -->
 		<link rel="stylesheet" href="login.css" type="text/css" media="all" />
 		<link rel="stylesheet" href="alert/dist/sweetalert2.min.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="dist/css/adminlte.min.css" type="text/css" media="all" />
 		<script src="alert/dist/sweetalert2.all.min.js"></script>
+		<link rel="stylesheet" href="dist/css/adminlte.min.css" type="text/css" media="all" />
 		<!--//Style-CSS -->
 	</head>
 

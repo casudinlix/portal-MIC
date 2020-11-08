@@ -3,6 +3,7 @@
 @section('parentPageTitle', 'App')
 @section('css')
 <link href="{{ asset('fron/layerslider/css/layerslider.css') }}" rel="stylesheet">
+<link href="{{ asset('fron/css/tabs.css') }}" rel="stylesheet">
 @endsection
 @section('content')
 <div id="full-slider-wrapper">
@@ -12,9 +13,9 @@
             <img src="{{ asset('fron/img/slides/slide_1.jpg') }}" class="ls-bg" alt="Slide background">
             <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;"
                 data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">
-                Atena <strong>Excellence</strong> in teaching</h3>
+                MIC <strong>Excellence</strong> in teaching</h3>
             <p class="ls-l slide_typo_2" style="top:52%; left:50%;"
-                data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">COLLEGE / UNIVERSITY /
+                data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">
                 CAMPUS</p>
             <p class="ls-l" style="top:62%; left:50%;" data-ls="durationin:2000;delayin:1300;easingin:easeOutElastic;">
                 <a href="tour.html" class="button_intro">Take a tour</a> <a href="about.html"
@@ -65,6 +66,42 @@
 
     </div>
 </div><!-- End layerslider -->
+<div class="container_gray_bg" id="home_feat_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="home_feat_1_box">
+                    <a href="#">
+                        <img src="{{ asset('fron/img/home_feat_1_1.jpg') }}" class="img-responsive" alt="">
+                        <div class="short_info">
+                            <h3>Plan a visit</h3><i class="arrow_carrot-right_alt2"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="home_feat_1_box">
+                    <a href="#">
+                        <img src="{{ asset('fron/img/home_feat_1_2.jpg') }}" class="img-responsive" alt="">
+                        <div class="short_info">
+                            <h3>Study Programs</h3><i class="arrow_carrot-right_alt2"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="home_feat_1_box">
+                    <a href="#">
+                        <img src="{{ asset('fron/img/home_feat_1_3.jpg') }}" class="img-responsive" alt="">
+                        <div class="short_info">
+                            <h3>Admissions</h3><i class="arrow_carrot-right_alt2"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- End row -->
+    </div><!-- End container -->
+</div><!-- End container_gray_bg -->
 
 <div class="container margin_60">
     <div class="main_title">
@@ -104,9 +141,9 @@
             <div class="box_feat_home">
                 <i class=" iconcustom-know_how"></i>
                 <h3>Study Plan Tutors</h3>
-                <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id
-                    tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an
-                    usu.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                    arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                    pretium mauris.</p>
             </div>
         </div>
     </div><!-- End row -->
@@ -115,18 +152,18 @@
             <div class="box_feat_home">
                 <i class=" iconcustom-science"></i>
                 <h3>Advanced Practice</h3>
-                <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id
-                    tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an
-                    usu.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                    arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                    pretium mauris.</p>
             </div>
         </div>
         <div class="col-md-6 col-sm-6">
             <div class="box_feat_home">
                 <i class=" iconcustom-test"></i>
                 <h3>Research</h3>
-                <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id
-                    tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an
-                    usu.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                    arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                    pretium mauris.</p>
             </div>
         </div>
     </div><!-- End row -->
@@ -134,27 +171,35 @@
 
     <div class="row add_bottom_60">
         <div class="main_title">
-            <h2>Atena focus on these ....</h2>
-            <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+            <h2>MIC Fokus Pada ....</h2>
+            <p>-</p>
         </div>
         <div class="col-md-6 col-md-offset-3">
             <div id="graph">
-                <img src="img/graphic.jpg" class="wow zoomIn" data-wow-delay="0.1s" alt="">
+                <img src="{{ asset('fron/img/graphic.jpg') }}" class="wow zoomIn" data-wow-delay="0.1s" alt="">
                 <div class="features step_1 wow zoomIn" data-wow-delay="1s">
                     <h4><strong>01.</strong> Students growth</h4>
-
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                        arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                        pretium mauris.</p>
                 </div>
                 <div class="features step_2 wow zoomIn" data-wow-delay="1.5s">
                     <h4><strong>02.</strong> Best learning practice</h4>
-
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                        arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                        pretium mauris.</p>
                 </div>
                 <div class="features step_3 wow zoomIn" data-wow-delay="2s">
                     <h4><strong>03.</strong> Focus on targets</h4>
-
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                        arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                        pretium mauris.</p>
                 </div>
                 <div class="features step_4 wow zoomIn" data-wow-delay="2.5s">
                     <h4><strong>04.</strong> Interdisciplanary model</h4>
-
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                        arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu
+                        pretium mauris.</p>
                 </div>
             </div>
         </div>
@@ -163,7 +208,8 @@
     </div>
 </div><!-- End container -->
 
-<div class="bg_content testimonials">
+<div class="bg_content testimonials"
+    style="background: url({{ asset('fron/img/testimonials.jpg') }}) repeat center center;">
     <div class="row">
         <div class="col-md-offset-1 col-md-10">
             <div class="carousel slide" data-ride="carousel" id="quote-carousel">
@@ -215,137 +261,19 @@
 
 <div class="container margin_60">
     <div class="main_title">
-        <h2>Latest from Atena ....</h2>
-        <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+        <h2>Terbaru Dari Kami ....</h2>
+        <p>-</p>
     </div>
     <div id="tabs" class="tabs">
         <nav>
             <ul>
-                <li><a href="#section-1" class="icon-courses"><span>Courses</span></a></li>
-                <li><a href="#section-2" class="icon-news"><span>News</span></a></li>
-                <li><a href="#section-3" class="icon-events"><span>Events</span></a></li>
+
+                <li><a href="#section-2" class="icon-news"><span>Berita</span></a></li>
+                <li><a href="#section-3" class="icon-events"><span>Agenda</span></a></li>
             </ul>
         </nav>
         <div class="content">
-            <section id="section-1">
-                <div class="row list_courses_tabs">
-                    <div class="col-md-4 col-sm-4">
-                        <h2>Diploma Courses</h2>
-                        <ul>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_1_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Mathemacis</strong> diploma</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_2_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Sciences</strong> diploma</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_3_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Litterature</strong> diploma</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_4_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Arts</strong> diploma</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_5_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Music</strong> diploma</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#" class="link_normal">View all Diploma courses</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <h2>Graduate Courses</h2>
-                        <ul>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_6_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Engineering</strong> graduate</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_7_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Biology</strong> graduate</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_8_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Psicology</strong> graduate</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_9_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Economy</strong> graduate</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_10_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Architecture</strong> graduate</h3><small>Start 3
-                                            October 2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#" class="link_normal">View all Graduate courses</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <h2>Master Courses</h2>
-                        <ul>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_11_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Information tecnology</strong> master</h3><small>Start 3
-                                            October 2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_12_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Digital media</strong> master</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#">
-                                        <figure><img src="img/course_13_thumb.jpg" alt="" class="img-rounded"></figure>
-                                        <h3><strong>Sculpture</strong> master</h3><small>Start 3 October
-                                            2015</small>
-                                    </a></div>
-                            </li>
-                            <li>
-                                <div><a href="#" class="link_normal">View all Master courses</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+
             <section id="section-2">
                 <div class="row list_news_tabs">
                     <div class="col-md-4 col-sm-4">
@@ -423,13 +351,14 @@
 
 
 
-<div class="bg_content magnific">
+<div class="bg_content magnific"
+    style="background: url({{ asset('fron/img/bg_content.jpg') }}) no-repeat center center;">
     <div>
-        <h3>Discover the Campus</h3>
+        <h3>Profile Kampus</h3>
         <p>
-            Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
         </p>
-        <a href="https://vimeo.com/20370747" class="video_pop"><i class="arrow_triangle-right_alt2"></i></a>
+        <a href="https://www.youtube.com/watch?v=yhNtUjtZEPY" class="video_pop"><i
+                class="arrow_triangle-right_alt2"></i></a>
     </div>
 </div><!-- End bg_content -->
 

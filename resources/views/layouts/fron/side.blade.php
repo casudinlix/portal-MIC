@@ -44,7 +44,7 @@
         </li> <!-- item-has-children -->
         <li>
             <ul class="side-nav-menu single-item-wp">
-                <li><a href="tour.html">Tour</a></li>
+                <li><a href="{{ route('tour') }}">Tour</a></li>
                 <li><a href="blog.html">Berita</a></li>
                 <li><a href="contacts.html">Kontak Kami</a></li>
             </ul>
