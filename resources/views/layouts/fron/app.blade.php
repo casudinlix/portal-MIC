@@ -144,7 +144,7 @@
             </footer><!-- End footer -->
             <div id="copy">
                 <div class="container">
-                    © Atena 2015 - All rights reserved.
+                    © {{ config('app.name') }} {{ date('Y') }} - All rights reserved.
                 </div>
             </div><!-- End copy -->
         </div> <!-- main-wrapper -->
