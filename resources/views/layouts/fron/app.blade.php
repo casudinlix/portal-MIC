@@ -16,12 +16,9 @@
         <!-- Favicons-->
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
         <link rel="apple-touch-icon" type="image/x-icon" href="{{ asset('logo.png') }}">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72"
-            href="img/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
-            href="img/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
-            href="img/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="{{ asset('logo.png') }}">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="{{ asset('logo.png') }}">
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{{ asset('logo.png') }}">
 
         <!-- BASE CSS -->
         <link href="{{ asset('fron/css/base.css') }}" rel="stylesheet">
