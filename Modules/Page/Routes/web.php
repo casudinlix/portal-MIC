@@ -11,6 +11,11 @@
 |
 */
 
-Route::prefix('page')->group(function() {
-    Route::get('/', 'PageController@index');
+
+Route::group(['middleware' => ['web', 'auth', 'status'], 'prefix' => 'page'], function () {
+    Route::group(['prefix' => 'admin'], function () {
+        Route::get('/', 'PageController@index')->name('page.index');
+        Route::get('/create', 'PageController@create')->name('page.create');
+        Route::post('/api/page', 'PageController@dataList')->name('page.api');
+    });
 });

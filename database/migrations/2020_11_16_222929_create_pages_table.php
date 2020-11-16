@@ -18,6 +18,7 @@ class CreatePagesTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->text('content');
+            $table->boolean('status');
             $table->timestamps();
         });
     }

@@ -36,3 +36,7 @@ function salam($jam)
         return "Selamat Malam ";
     }
 }
+function slug($data)
+{
+    return Str::slug($data, '-');
+}
