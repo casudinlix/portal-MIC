@@ -50,7 +50,12 @@
             </ul>
             <!--single-item-wp -->
             <ul class="side-nav-menu single-item-wp">
+                @if (auth()->check())
+                <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                @else
+
                 <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                @endif
 
                 <li class="hidden-lg hidden-md"><a href="#search">Search</a></li>
                 <li><a href="#0">Terms &amp; Conditions</a></li>

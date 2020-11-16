@@ -55,7 +55,12 @@
                 <ul>
                     <li><a href="#search"><i class=" icon-search"></i></a></li>
                     <li><a href="{{ route('tour') }}">Tour</a></li>
+                    @if (Auth::check())
+                    <li style="color:white">{{ auth()->user()->name }}</li>
+                    @else
+
                     <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                    @endif
                 </ul>
             </nav>
             <a id="menu-trigger" href="#"><span class="menu-trigger-text">Menu</span><span
@@ -98,8 +103,13 @@
                             <ul>
                                 <li><a href="#">About us</a></li>
                                 <li><a href="#">Blog</a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Register</a></li>
+                                @if (auth()->check())
+                                <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                                @else
+                                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+
+                                @endif
+
                                 <li><a href="#">Terms and condition</a></li>
                             </ul>
                         </div>
@@ -148,7 +158,7 @@
                     <form action="#" class="popup-form" id="myLogin">
                         @csrf
                         <input type="text" class="form-control form-white" placeholder="Username Or Email" name="email">
-                        <input type="text" class="form-control form-white" placeholder="Password" name="password">
+                        <input type="password" class="form-control form-white" placeholder="Password" name="password">
                         <div class="checkbox-holder text-left">
                             <div class="checkbox">
                                 <input type="checkbox" value="accept_1" id="check_1" name="check_1" />

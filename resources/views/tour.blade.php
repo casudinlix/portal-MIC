@@ -72,7 +72,7 @@
 
         <section class="tour-section">
             <div class="full-container">
-                <div class="half-containerx" background-image: url("{{ asset('logo.png') }}"); background-size: cover;>
+                <div class="half-container" background-image: url("{{ asset('logo.png') }}"); background-size: cover;>
                 </div>
 
                 <div class="half-container">
