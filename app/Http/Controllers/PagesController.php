@@ -10,4 +10,8 @@ class PagesController extends Controller
     {
         return view('tour');
     }
+    public function about()
+    {
+        return view('about');
+    }
 }

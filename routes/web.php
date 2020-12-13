@@ -27,4 +27,5 @@ Route::get('logout', [LoginController::class, 'logout'])->name('logout.dashboard
 Route::get("tes", [TesController::class, 'index']);
 Route::group(['prefix' => 'page'], function () {
     Route::get('tour', [PagesController::class, 'tour'])->name('tour');
+    Route::get('about', [PagesController::class, 'about'])->name('about');
 });

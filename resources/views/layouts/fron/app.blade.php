@@ -221,8 +221,8 @@
         <script>
             new CBPFWTabs( document.getElementById( 'tabs' ) );
         </script>
-        <link rel="stylesheet" href="alert/dist/sweetalert2.min.css" type="text/css" media="all" />
-        <script src="alert/dist/sweetalert2.all.min.js"></script>
+        <link rel="stylesheet" href="{{ asset('alert/dist/sweetalert2.min.css') }}" type="text/css" media="all" />
+        <script src="{{ asset('alert/dist/sweetalert2.all.min.js') }}"></script>
         <script>
             $("#spin").hide();
         			$("#myLogin").submit(function (e) { 

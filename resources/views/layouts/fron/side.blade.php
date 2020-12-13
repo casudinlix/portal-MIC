@@ -14,7 +14,7 @@
         <li class="item-has-children">
             <a href="#">Profil Kampus</a>
             <ul class="sub-menu">
-                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="{{ route('about') }}">Tentang Kami</a></li>
                 <li class="item-has-children">
                     <a href="#">Visi Dan Misi</a>
                     <ul class="sub-menu">
