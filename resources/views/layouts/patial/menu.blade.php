@@ -15,6 +15,20 @@
                                 Dashboard
                         </a>
                 </li>
+                <li class="nav-item">
+                        <a href="{{ route('dashboard') }}"
+                                class="nav-link {{ request()->segment(1)=='dashboard'?"active":"" }}">
+                                <i class="nav-icon fas fa-scroll"></i>
+                                Slide
+                        </a>
+                </li>
+                <li class="nav-item">
+                        <a href="{{ route('dashboard') }}"
+                                class="nav-link {{ request()->segment(1)=='dashboard'?"active":"" }}">
+                                <i class="nav-icon fas fa-newspaper"></i>
+                                Berita
+                        </a>
+                </li>
 
                 <li
                         class="nav-item has-treeview {{ request()->segment(1)=='acl'?"menu-open":"" }} {{ request()->segment(1)=='page'?"menu-open":"" }}">
