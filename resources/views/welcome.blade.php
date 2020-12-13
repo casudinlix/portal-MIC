@@ -18,8 +18,7 @@
                 data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">
                 CAMPUS</p>
             <p class="ls-l" style="top:62%; left:50%;" data-ls="durationin:2000;delayin:1300;easingin:easeOutElastic;">
-                <a href="tour.html" class="button_intro">Take a tour</a> <a href="about.html"
-                    class="button_intro outline">About us</a></p>
+
         </div>
 
         <!-- second slide -->
@@ -66,6 +65,7 @@
 
     </div>
 </div><!-- End layerslider -->
+
 <div class="container_gray_bg" id="home_feat_1">
     <div class="container">
         <div class="row">
